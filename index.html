@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Puzzle Pursuit 🏆</title>
+    <link
+            href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap"
+            rel="stylesheet"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="name-letters">
+           <strong></strong> <span class="fifteen">Puzzle</span> Pursuit  🏆
+        </h1>
+    </header>
+    <div id="tips" class="game-tips">
+        <p>
+            Welcome ! Are you ready to take on the ultimate challenge?
+            Can you beat the challenge and become a master of this mind-bending game? Let's find out!
+        </p>
+    </div>
+    <div class="float-parent-element">
+        <div class="float-child-element">
+            <div id="labelMoves" class="labelMoves">
+                <strong>No Of Moves :</strong>
+            </div>
+            <div id="countMoves" class="countMoves">
+                <strong> <span class="move-text"></span></strong>
+            </div>
+        </div>
+
+        <div class="float-child-element">
+            <div id="labelMoves1" class="labelMoves">
+                <strong> Time Spent :</strong>
+            </div>
+            <div id="countMoves1" class="countMoves">
+                <strong>  <span class="time-text"></span></strong>
+                <strong> s</strong>
+            </div>
+        </div>
+    </div>
+    <center>
+    <div id="table" style="display: table;">
+        <div id="row1" style="display: table-row;">
+            <div id="cell11" class="tile1" onClick="clickTile(1, 1);"></div>
+            <div id="cell12" class="tile2" onClick="clickTile(1, 2);"></div>
+            <div id="cell13" class="tile3" onClick="clickTile(1, 3);"></div>
+            <div id="cell14" class="tile4" onClick="clickTile(1, 4);"></div>
+        </div>
+        <div id="row2" style="display: table-row;">
+            <div id="cell21" class="tile5" onClick="clickTile(2, 1);"></div>
+            <div id="cell22" class="tile6" onClick="clickTile(2, 2);"></div>
+            <div id="cell23" class="tile7" onClick="clickTile(2, 3);"></div>
+            <div id="cell24" class="tile8" onClick="clickTile(2, 4);"></div>
+        </div>
+        <div id="row3" style="display: table-row;">
+            <div id="cell31" class="tile9" onClick="clickTile(3, 1);"></div>
+            <div id="cell32" class="tile10" onClick="clickTile(3, 2);"></div>
+            <div id="cell33" class="tile11" onClick="clickTile(3, 3);"></div>
+            <div id="cell34" class="tile12" onClick="clickTile(3, 4);"></div>
+        </div>
+        <div id="row4" style="display: table-row;">
+            <div id="cell41" class="tile13" onClick="clickTile(4, 1);"></div>
+            <div id="cell42" class="tile14" onClick="clickTile(4, 2);"></div>
+            <div id="cell43" class="tile15" onClick="clickTile(4, 3);"></div>
+            <div id="cell44" class="tile16" onClick="clickTile(4, 4);"></div>
+        </div>
+    </div>
+</center>
+
+<button class="btn btn-outline-primary" onClick="simpleShuffle();">Simple Game</button>
+<button class="btn btn-outline-primary" onClick="shuffle();">New Game</button>
+</div>
+<div id="overlay-2" onclick="endCongratsOverLay()">
+    <div id="text-2">WOOHOO! 🎉🎊🥳👏
+        </br>
+        Game Time: <span class="time-text1"></span>
+        </br>
+        No Of Moves : <span class="move-text1"></span>
+        </br>
+        click to replay !!
+    </div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>

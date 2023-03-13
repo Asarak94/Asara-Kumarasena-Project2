@@ -1,0 +1,138 @@
+body {
+	background: #bad0d0;
+	text-align: center;
+}
+.name-letters {
+	margin: 20px 0;
+	font-family: "Indie Flower", cursive;
+	font-size: 50px;
+}
+.game-tips{
+	margin: 20px 0;
+	font-family: "Indie Flower", cursive;
+	font-size: 30px;
+}
+
+.float-parent-element {
+	width: 50%;
+	padding-bottom: 120px;
+}
+.float-child-element {
+	float: left;
+	width: 50%;
+}
+.labelMoves {
+	margin-left: 125%;
+	color: #217575;
+	font-size: 22px;
+	padding-top: 5px;
+	text-align: center;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width: 150px;
+	border-top: 4px solid #ffffff;
+	border-left: 4px solid #ffffff;
+	border-right: 4px solid #ffffff;
+
+}
+
+.countMoves {
+	margin-left: 125%;
+	padding: 5px 0;
+	color: #217575;
+	font-size: 20px;
+	text-align: center;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width: 150px;
+	border-bottom: 4px solid #261919;
+	border-left: 4px solid #261919;
+	border-right: 4px solid #261919;
+}
+
+#overlay-2 {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 2;
+	cursor: pointer;
+	font-family: "Indie Flower", cursive;
+}
+#text-2 {
+	font-family: "Indie Flower", cursive;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 60px;
+	color: white;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	color: #212529;
+	text-align: center;
+	margin: 15px 0 0 0;
+	min-width: 100px;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	border: 1px solid transparent;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+	border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn-outline-primary {
+
+	color: #ffffff;
+	border-color: #203333;
+	background-color: #143438;
+	padding-top: 15px;
+}
+.btn-outline-primary:hover {
+	background-color: #97c9c9;
+	color: #261919;
+	border-color: #261919;
+}
+
+.tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9, .tile10, .tile11, .tile12, .tile13, .tile14, .tile15, .tile16{
+	display: table-cell;
+	width: 80px;
+	height: 80px;
+	border: 2px solid #3c7575;
+	background: url("number_puzzle_game_image.png");
+	color: #d24040;
+	cursor: pointer;
+}
+
+.tile1 {background-position: 0px 0px;}
+.tile2 {background-position: -90px 0px;}
+.tile3 {background-position: -180px 0px;}
+.tile4 {background-position: -270px 0px;}
+.tile5 {background-position: 0px -90px;}
+.tile6 {background-position: -90px -90px;}
+.tile7 {background-position: -180px -90px;}
+.tile8 {background-position: -270px -90px;}
+.tile9 {background-position: 0px -180px;}
+.tile10 {background-position: -90px -180px;}
+.tile11 {background-position: -180px -180px;}
+.tile12 {background-position: -270px -180px;}
+.tile13 {background-position: 0px -270px;}
+.tile14 {background-position: -90px -270px;}
+.tile15 {background-position: -180px -270px;}
+.tile16 {background: #97c9c9; cursor: default;}
+
